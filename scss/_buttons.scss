@@ -1,0 +1,57 @@
+.btn {
+
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    border-radius: 2em;
+    vertical-align: baseline;
+    padding: 1em 2.2em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
+    position: relative;
+
+    &.primary {
+        color: var(--bright-orange);
+    }
+
+    &.secondary {
+        color: var(--dark-cyan);
+    }
+
+    &.terciary {
+        color: var(--very-dark-cyan);
+    }
+
+    &:hover {
+
+        &:after {
+            content: "";
+            border: 2px solid var(--very-light-gray);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background: transparent;
+            pointer-events: none;
+            -webkit-transition: all .25s ease;
+            transition: all .25s ease;
+            box-sizing: border-box;
+        }
+
+        background-color: transparent;
+        color:var(--very-light-gray);
+
+    }
+
+}

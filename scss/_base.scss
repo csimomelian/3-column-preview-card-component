@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+    
+	height: 100%;
+	font-size: 62.5%;
+
+    //### Primary
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+	
+    //### Neutral
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    //### common
+	--paddingX: 4.9rem;
+	--paddingY: 4.9rem;
+
+    @media only screen and (max-width: 376px) {
+        font-size: 60%;
+    }
+	
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+    background-color: var(--light-gray);
+    @media only screen and (max-width: 376px) {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,32 @@
+.wrapper {
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.4rem;
+}
+
+h1 {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+p {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
