@@ -28,7 +28,7 @@ body {
   display: flex;
   padding: 4rem;
   flex-direction: column;
-  background-color: var(--light-gray); }
+  background-color: var(--very-light-gray); }
   @media only screen and (max-width: 376px) {
     body {
       padding: 2rem; } }
@@ -83,13 +83,17 @@ body {
   align-items: center; }
 
 .attribution {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 1em;
-  font-size: 1.4rem; }
+  position: relative;
+  padding: 0.35em;
+  font-size: 1.4rem;
+  text-align: center; }
+  @media only screen and (min-width: 375px) {
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1em; } }
 
 h1 {
   color: var(--very-light-gray);
